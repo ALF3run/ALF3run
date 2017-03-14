@@ -5,10 +5,18 @@ $(document).ready(function() {
   });
   
   $(window).scroll(function() {
-    if($(window).scrollTop() > Math.min($(window).height(), $(window).width())*0.6) {
+    if($(window).scrollTop() > $('#sec2').offset().top-Math.min($(window).width(),$(window).height())*0.8 && $(window).width() >= 992) {
       $('#about').css("visibility", "visible").addClass("animated fadeInUp");
       $('#skills').css("visibility", "visible").addClass("animated rotateInUpRight");
-      $(window).off();
+    } 
+    if($(window).scrollTop() > $('#sec2').offset().top-Math.min($(window).width(),$(window).height())*0.8 && $(window).width() < 992) {
+      $('#about').css("visibility", "visible").addClass("animated fadeInUp");
+    } 
+    if($(window).scrollTop() > $('#skills').offset().top-Math.min($(window).width(),$(window).height())*0.8  && $(window).width() <992) {
+      $('#skills').css("visibility", "visible").addClass("animated fadeInUp");
+    } 
+    if($(window).scrollTop() > $('.thumbnail').offset().top-Math.min($(window).width(),$(window).height())*0.8) {
+      $('.thumbnail').css("visibility", "visible").addClass("animated fadeInUp");
     }
   });
 });
