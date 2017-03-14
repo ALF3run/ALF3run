@@ -45,7 +45,7 @@ section {
 .overlay {
   background-color: rgba(255, 255, 255, 0.5);
   height: 100%;
-  padding-bottom: 30vmin;
+  padding-bottom: 50vmin;
 }
 .overlay-dark {
   background-color: rgba(0, 0, 0, 0.1);
