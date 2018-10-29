@@ -24,8 +24,8 @@ $(document).ready(function() {
 });
 
 function fillingProgressBars() {
-  $('progress-bar')[0].style.width = "90%";
-  $('progress-bar')[0].style.width = "80%";
-  $('progress-bar')[0].style.width = "90%";
-  $('progress-bar')[0].style.width = "80%";
+  $('.progress-bar')[0].style.width = "90%";
+  $('.progress-bar')[1].style.width = "80%";
+  $('.progress-bar')[2].style.width = "90%";
+  $('.progress-bar')[3].style.width = "80%";
 }
