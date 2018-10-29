@@ -15,7 +15,8 @@ $(document).ready(function() {
     } 
     if($(window).scrollTop() > $('#skills').offset().top-Math.min($(window).width(),$(window).height())*0.8  && $(window).width() <992) {
       $('#skills').css("visibility", "visible").addClass("animated fadeInLeft");
-      setTimeout(fillingProgressBars, 500); 
+      setTimeout(fillingProgressBars, 500);
+    }
     if($(window).scrollTop() > $('.thumbnail').offset().top-Math.min($(window).width(),$(window).height())*0.8) {
       $('.thumbnail').css("visibility", "visible").addClass("animated fadeInUp");
     }
